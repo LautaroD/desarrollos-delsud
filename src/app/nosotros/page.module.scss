@@ -1,0 +1,280 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    min-height: calc(100vh - 100px);
+    height: auto;
+    overflow: hidden;
+}
+
+.background {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "box_1 box_2 box_6"
+        "box_1 box_2 box_5"
+        "box_1 box_12 box_5"
+        "box_1 box_3 box_4"
+        "box_1 box_3 box_4";
+}
+
+.box_1 {
+    grid-area: box_1;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_2 {
+    grid-area: box_2;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_3 {
+    grid-area: box_3;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_4 {
+    grid-area: box_4;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_5 {
+    grid-area: box_5;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_6 {
+    grid-area: box_6;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_7,
+.box_8,
+.box_9,
+.box_10,
+.box_11 {
+    display: none;
+}
+
+.box_12 {
+    grid-area: box_12;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__wrapper {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    &__gif {
+        align-self: center;
+        width: auto;
+    }
+
+    &__title {
+        color: $gris-oscuro;
+    }
+
+    &__mosaico {
+        display: flex;
+        align-self: center;
+        width: 360px;
+    }
+}
+
+@media (min-width: 750px) {
+    .background {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 70px);
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box_1 box_2 box_2 box_2 box_6 box_6 box_6 box_7 box_9 box_9"
+            "box_1 box_2 box_2 box_2 box_5 box_5 box_5 box_8 box_8 box_8"
+            "box_1 box_12 box_12 box_12 box_5 box_5 box_5 box_10 box_10 box_10"
+            "box_1 box_3 box_3 box_3 box_4 box_4 box_4 box_10 box_10 box_10"
+            "box_1 box_3 box_3 box_3 box_4 box_4 box_4 box_11 box_11 box_11";
+        .box_1 {
+            grid-area: box_1;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_2 {
+            grid-area: box_2;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_3 {
+            grid-area: box_3;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_6 {
+            grid-area: box_6;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_5 {
+            grid-area: box_5;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_4 {
+            grid-area: box_4;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_7 {
+            display: unset;
+            grid-area: box_7;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_8 {
+            display: unset;
+            grid-area: box_8;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_9 {
+            display: unset;
+            grid-area: box_9;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_10 {
+            display: unset;
+            grid-area: box_10;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_11 {
+            display: unset;
+            grid-area: box_11;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_12 {
+            grid-area: box_12;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+    }
+
+    .container {
+        padding: 20px;
+
+        align-items: center;
+
+        &__title {
+            width: 590px;
+        }
+
+        &__gif {
+            width: 506px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0px 100px;
+        margin-bottom: 30px;
+
+        &__wrapper {
+            display: inherit;
+            width: 100%;
+        }
+
+        &__gif {
+            width: 45%;
+            margin-left: 18px;
+            justify-content: flex-start;
+        }
+
+        &__mosaico {
+            width: 45%;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        height: calc(100vh - 200px);
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        &__gif {
+            // width: 480px;
+            height: 641px;
+
+            margin-left: 18px;
+            justify-content: center;
+
+            position: relative;
+            transform: translateY(-70px);
+        }
+
+        &__mosaico {
+            width: 40%;
+        }
+    }
+}

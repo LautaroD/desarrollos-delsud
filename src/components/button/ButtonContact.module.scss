@@ -1,0 +1,28 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+    .button_contacto {
+        padding: 10px;
+        background-color: inherit;
+        border: 1px solid $gris-primario;
+        color: $gris-primario;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            background-color: $gris-primario;
+            color: $azul-institucional;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        .button_contacto {
+            font-size: 16px;
+        }
+    }
+}

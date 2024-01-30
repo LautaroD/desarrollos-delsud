@@ -1,0 +1,327 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.background {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "box_1 box_2 box_6"
+        "box_1 box_2 box_5"
+        "box_1 box_12 box_5"
+        "box_1 box_3 box_4"
+        "box_1 box_3 box_4";
+}
+
+.box_1 {
+    grid-area: box_1;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_2 {
+    grid-area: box_2;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_3 {
+    grid-area: box_3;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_4 {
+    grid-area: box_4;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_5 {
+    grid-area: box_5;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_6 {
+    grid-area: box_6;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.box_7,
+.box_8,
+.box_9,
+.box_10,
+.box_11 {
+    display: none;
+}
+
+.box_12 {
+    grid-area: box_12;
+    background-color: $gris-primario;
+    opacity: 0.2;
+}
+
+.container {
+    margin-top: 10px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__wrapper {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__title {
+        color: $gris-oscuro;
+    }
+
+    &__subTitle {
+        margin-top: 10px;
+        color: $azul-primario;
+        font-weight: 500;
+
+        :nth-child(2) {
+            width: 67%;
+        }
+    }
+
+    &__divisor {
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+        height: 2.5px;
+        border-radius: 7px;
+        background-color: $azul-institucional;
+    }
+
+    &__redes_sociales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        gap: 15px;
+
+        color: $azul-primario;
+        font-weight: 500;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            width: 250px;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .background {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 70px);
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box_1 box_2 box_2 box_2 box_6 box_6 box_6 box_7 box_9 box_9"
+            "box_1 box_2 box_2 box_2 box_5 box_5 box_5 box_8 box_8 box_8"
+            "box_1 box_12 box_12 box_12 box_5 box_5 box_5 box_10 box_10 box_10"
+            "box_1 box_3 box_3 box_3 box_4 box_4 box_4 box_10 box_10 box_10"
+            "box_1 box_3 box_3 box_3 box_4 box_4 box_4 box_11 box_11 box_11";
+        .box_1 {
+            grid-area: box_1;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_2 {
+            grid-area: box_2;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_3 {
+            grid-area: box_3;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_6 {
+            grid-area: box_6;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_5 {
+            grid-area: box_5;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_4 {
+            grid-area: box_4;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_7 {
+            display: unset;
+            grid-area: box_7;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_8 {
+            display: unset;
+            grid-area: box_8;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_9 {
+            display: unset;
+            grid-area: box_9;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_10 {
+            display: unset;
+            grid-area: box_10;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_11 {
+            display: unset;
+            grid-area: box_11;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+
+        .box_12 {
+            grid-area: box_12;
+            background-color: $gris-primario;
+            opacity: 0.2;
+        }
+    }
+
+    .container {
+        padding: 20px;
+
+        align-items: center;
+
+        &__title {
+            width: 590px;
+        }
+
+        &__subTitle {
+            :nth-child(2) {
+                width: 100%;
+            }
+        }
+
+        &__divisor {
+            margin: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0px 100px;
+        margin-bottom: 30px;
+
+        &__wrapper {
+            display: inherit;
+            width: 100%;
+        }
+
+        &__form {
+            width: 45%;
+            margin-left: 18px;
+            justify-content: flex-start;
+        }
+
+        &__divisor {
+            display: none;
+            width: 5px;
+            height: 300px;
+        }
+
+        &__redes_sociales {
+            margin-bottom: 0px;
+            gap: 40px;
+            width: 40%;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                width: auto;
+                font-size: 20px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        &__divisor {
+            display: unset;
+        }
+    }
+}

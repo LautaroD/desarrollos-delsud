@@ -1,0 +1,35 @@
+{
+  "name": "desarrollos-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 2027",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "animate.css": "^4.1.1",
+    "axios": "^1.5.1",
+    "eslint": "8.49.0",
+    "eslint-config-next": "^13.5.1",
+    "firebase": "^10.5.0",
+    "formik": "^2.4.5",
+    "gsap": "^3.12.2",
+    "jquery": "^3.7.1",
+    "leaflet": "^1.9.4",
+    "next": "^13.4.0",
+    "react": "^18.2.0",
+    "react-chatbot-kit": "^2.1.2",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "sharp": "^0.32.6",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

@@ -1,0 +1,119 @@
+@import "../../styles/global.scss";
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+
+    span {
+        display: flex;
+        width: 100vw;
+
+        padding: 0px 20px;
+
+        input {
+            border: none;
+            background-color: $gris-primario;
+            padding: 15px 25px;
+            font-weight: 500;
+            font-size: 16px;
+
+            color: $azul-primario;
+
+            width: 100%;
+
+            &:focus {
+                outline: 1px solid $azul-primario;
+            }
+        }
+
+        textarea {
+            border: none;
+            background-color: $gris-primario;
+            padding: 15px 25px;
+            resize: none;
+            font-weight: 500;
+            font-size: 16px;
+
+            color: $azul-primario;
+
+            width: 100%;
+
+            &:focus {
+                outline: 1px solid $azul-primario;
+            }
+        }
+
+        .error_message {
+            position: absolute;
+            margin-top: 50px;
+            margin-left: -20px;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #dc2f02;
+        }
+    }
+
+    .button_disabled {
+        width: auto;
+        text-align: center;
+        padding: 15px;
+        color: $gris-oscuro;
+        font-style: italic;
+        font-weight: 500;
+        background-color: $gris-primario;
+        align-self: flex-end;
+
+        margin: 0px 20px;
+    }
+
+    button {
+        align-self: flex-end;
+        padding: 10px;
+        width: auto;
+        border: none;
+        background-color: $azul-primario;
+        color: $gris-primario;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 17px;
+        font-style: italic;
+
+        img {
+            width: 40px;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .form_container {
+        width: 590px;
+
+        span {
+            padding: 0px;
+
+            input {
+                width: 590px;
+
+                &:focus {
+                    outline: 1px solid $azul-primario;
+                }
+            }
+
+            textarea {
+                width: 590px;
+            }
+        }
+
+        .error_message {
+            margin-left: 0px !important;
+        }
+
+        .button_disabled {
+            margin: 0px;
+        }
+    }
+}

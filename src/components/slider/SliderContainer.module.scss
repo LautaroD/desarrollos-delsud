@@ -1,0 +1,108 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    position: relative;
+
+    &__background {
+        position: absolute;
+        top: -70px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    &__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        &__title_subtitle {
+            position: relative;
+            left: 12%;
+            color: $gris-primario;
+
+            h2 {
+                font-style: italic;
+                font-size: 70px;
+            }
+
+            span {
+                font-size: 25px;
+                font-weight: 200;
+                line-height: 35px;
+
+                width: 640px;
+                display: flex;
+                gap: 5px;
+                align-items: baseline;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__contact_button {
+            width: 255px;
+            position: relative;
+            top: 15%;
+            left: 12%;
+        }
+
+        &__redes_sociales {
+            position: relative;
+            top: 30%;
+            left: 12%;
+
+            display: flex;
+            gap: 18px;
+            align-items: center;
+
+            a {
+                img {
+                    transition: ease 1s;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        &__content {
+            bottom: 50px;
+
+            &__title_subtitle {
+                left: 5% !important;
+
+                h2 {
+                    font-size: 35px !important;
+                }
+
+                span {
+                    font-size: 15px !important;
+                    font-weight: 200 !important;
+                    line-height: 15px !important;
+
+                    width: 92% !important;
+                }
+            }
+
+            &__contact_button {
+                top: 25%;
+                left: 5% !important;
+            }
+
+            &__redes_sociales {
+                top: 30%;
+                left: 5% !important;
+            }
+        }
+    }
+}

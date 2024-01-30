@@ -1,0 +1,45 @@
+@import "../../styles/global.scss";
+
+.button_consultar_wrapper {
+    width: 180px;
+    height: 40px;
+
+    background-color: $azul-institucional;
+    color: $gris-primario;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+
+    img {
+        width: 55px;
+    }
+}
+
+.button_consultar_wrapper:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 450px) {
+    .button_consultar_wrapper {
+        width: 130px;
+        height: 40px;
+
+        background-color: $azul-institucional;
+        color: $gris-primario;
+        font-weight: 500;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        cursor: pointer;
+
+        img {
+            width: 30px;
+        }
+    }
+}

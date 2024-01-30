@@ -1,0 +1,31 @@
+@import "../../styles/global.scss";
+
+.wrapper {
+    height: 100px;
+    width: 100%;
+    background-color: $gris-secundario;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
+
+    &__container {
+        height: 100%;
+        margin: 0px 30px 0px 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 750px) {
+    .wrapper {
+        height: 70px;
+        background-color: $gris-primario;
+        border-bottom: 2px solid $gris-secundario;
+    }
+}
+
+@media (min-width: 1370px) {
+    .wrapper {
+        padding: 0px 100px;
+    }
+}
