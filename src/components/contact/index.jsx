@@ -13,7 +13,7 @@ export const metadata = {
     description: "Desarrollos Delsud",
 };
 
-export default function SectionContacto() {
+export const SectionContacto = () => {
     const [open, setOpen] = useState(false);
     const [openError, setOpenError] = useState(false);
 
@@ -87,4 +87,4 @@ export default function SectionContacto() {
             ) : null}
         </>
     );
-}
+};

@@ -1,4 +1,4 @@
-import SectionContacto from "@/components/contact";
+import { SectionContacto } from "@/components/contact";
 
 export const metadata = {
     title: "Desarrollos Delsud | Contacto",

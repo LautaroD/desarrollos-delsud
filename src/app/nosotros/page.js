@@ -1,5 +1,7 @@
 import style from "./page.module.scss";
-import { Gif, MosaicoNosotros } from "@/components/";
+import dynamic from "next/dynamic";
+
+import { MosaicoNosotros } from "@/components/cards/MosaicoNosotros";
 
 export const metadata = {
     title: "Desarrollos Delsud | Nosotros",
@@ -31,11 +33,11 @@ export default function Nosotros() {
                     </div>
                 </span>
 
-                <div className={style.container__gif}>
+                {/* <div className={style.container__gif}>
                     <span className={style.container__gif__img}>
                         <Gif />
                     </span>
-                </div>
+                </div> */}
 
                 <div className={style.container__mosaico}>
                     <MosaicoNosotros />

@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import Script from "next/script";
-import { Navbar, Footer } from "@/components";
+import { Footer } from "@/components/footer/Footer";
+import { Navbar } from "@/components/navigation/Navbar";
 import ChatbotContainer from "@/components/chatbot/Chatbot";
 
 import "./globals.css";
